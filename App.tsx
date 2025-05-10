@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Text, SafeAreaView, StyleSheet, TouchableOpacity } from 'react-native';
-import RNBackgroundDownloader from '@kesha-antonov/react-native-background-downloader'
+import RNBackgroundDownloader from '@kesha-antonov/react-native-background-downloader';
 
 RNBackgroundDownloader.setConfig({
   isLogsEnabled: true,
@@ -23,7 +23,7 @@ export default function App() {
     task
       .begin(async (handler) => {
         console.log(
-          `Download started—expected ${handler.expectedBytes} bytes for ${fileName}.`
+          `Download started—expected ${handler.expectedBytes} bytes for 10MB.zip.`
         );
       })
       .progress((handler) => {
